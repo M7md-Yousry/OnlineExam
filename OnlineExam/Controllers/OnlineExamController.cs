@@ -9,9 +9,9 @@ public class OnlineExamController : Controller
   {
       return View();
   }
-  public IActionResult Admin()
+  public IActionResult Login()
   {
-      return View();
+      return this.RedirectToAction("index", "Exams");
   }
 
     public IActionResult USER()

@@ -34,6 +34,15 @@
             rgba(201, 0, 255, 1) 100%
         );
         }
+        .navbar span {
+          color: purple;
+          font-weight: bolder;
+          font-size: larger;
+        }
+        .navbar a {
+          text-decoration: none;
+          color: purple;
+        }
         table{
             margin-top: 1.5rem;
             margin-left: 3rem;
@@ -81,6 +90,19 @@
     </style>
 </head>
 <body>
+    <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img
+          src="~/images/Qnb.png"
+          alt="QNB"
+          height="24"
+          class="d-inline-block align-text-top" />
+      </a>
+      <span>Admin</span>
+      <a asp-action="Logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+    </div>
+  </nav>
 <h1>Questions</h1>
 <div class="create">
     <a asp-action="Create" class="btn">Create New</a>

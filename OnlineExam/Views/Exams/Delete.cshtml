@@ -34,6 +34,15 @@
             rgba(201, 0, 255, 1) 100%
         );
         }
+        .navbar span {
+          color: purple;
+          font-weight: bolder;
+          font-size: larger;
+        }
+        .navbar a {
+          text-decoration: none;
+          color: purple;
+        }
         h1 {
         font-family: Georgia, "Times New Roman", Times, serif;
         font-weight: bolder;
@@ -71,6 +80,19 @@
         }
     </style>
 </head>
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img
+          src="~/images/Qnb.png"
+          alt="QNB"
+          height="24"
+          class="d-inline-block align-text-top" />
+      </a>
+      <span>Admin</span>
+      <a asp-action="Logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+    </div>
+  </nav>
 <h1>Delete</h1>
 <h3>Are you sure you want to delete this?</h3>
 <div>

@@ -19,10 +19,16 @@ namespace OnlineExam.Controllers
             _context = context;
         }
 
+
+        public IActionResult Logout()
+        {
+            return this.RedirectToAction("index", "OnlineExam");
+        }
+
         // GET: Exams
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Exams.ToListAsync());
+            return View(await _context.Exams.ToListAsync());    
         }
 
         // GET: Exams/Details/5
