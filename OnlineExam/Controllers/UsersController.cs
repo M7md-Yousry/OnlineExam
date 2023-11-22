@@ -1,37 +1,31 @@
 using System;
-using System.Collections.Generic;
+using System.Collections.Generic;   
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using OnlineExam.Data;
-using OnlineExam.Models;
+using UsersProfile.Data;
+using UsersProfiles.Models;
 
 namespace OnlineExam.Controllers
 {
-    public class ExamsController : Controller
+    public class UsersController : Controller
     {
-        private readonly OnlineExamContext _context;
+        private readonly UsersProfilesContext _context;
 
-        public ExamsController(OnlineExamContext context)
+        public UsersController(UsersProfilesContext context)
         {
             _context = context;
         }
 
-
-        public IActionResult Logout()
-        {
-            return this.RedirectToAction("index", "OnlineExam");
-        }
-
-        // GET: Exams
+        // GET: Users
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Exams.ToListAsync());    
+            return View(await _context.Profiles.ToListAsync());
         }
 
-        // GET: Exams/Details/5
+        // GET: Users/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -39,39 +33,38 @@ namespace OnlineExam.Controllers
                 return NotFound();
             }
 
-            var exams = await _context.Exams
+            var profiles = await _context.Profiles
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (exams == null)
+            if (profiles == null)
             {
                 return NotFound();
-            }   
+            }
 
-            return View(exams);
+            return View(profiles);
         }
 
-        // GET: Exams/Create
-        public IActionResult Create()
+        // GET: Users/Create
+        public IActionResult Create(Profiles model)
         {
-            return View();
+            if (model.Email == "Mohamed.Y-Amer@QNBALAHLI.COM")
+        {
+            // Redirect to a specific view if the email matches
+            return this.RedirectToAction("index", "Exams");
+        }
+        else
+        {
+            // Redirect to another view if the email doesn't match
+            return this.RedirectToAction("User", "OnlineExam");
+        }
         }
 
-        // POST: Exams/Create
+        // POST: Users/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Question,Answer1,Answer2,Answer3,Answer4,Answer5,Score")] Exams exams)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(exams);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(exams);
-        }
 
-        // GET: Exams/Edit/5
+        // GET: Users/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,22 +72,22 @@ namespace OnlineExam.Controllers
                 return NotFound();
             }
 
-            var exams = await _context.Exams.FindAsync(id);
-            if (exams == null)
+            var profiles = await _context.Profiles.FindAsync(id);
+            if (profiles == null)
             {
                 return NotFound();
             }
-            return View(exams);
+            return View(profiles);
         }
 
-        // POST: Exams/Edit/5
+        // POST: Users/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Question,Answer1,Answer2,Answer3,Answer4,Answer5,Score")] Exams exams)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Email,Password")] Profiles profiles)
         {
-            if (id != exams.Id)
+            if (id != profiles.Id)
             {
                 return NotFound();
             }
@@ -103,12 +96,12 @@ namespace OnlineExam.Controllers
             {
                 try
                 {
-                    _context.Update(exams);
+                    _context.Update(profiles);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ExamsExists(exams.Id))
+                    if (!ProfilesExists(profiles.Id))
                     {
                         return NotFound();
                     }
@@ -119,10 +112,10 @@ namespace OnlineExam.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(exams);
+            return View(profiles);
         }
 
-        // GET: Exams/Delete/5
+        // GET: Users/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -130,34 +123,34 @@ namespace OnlineExam.Controllers
                 return NotFound();
             }
 
-            var exams = await _context.Exams
+            var profiles = await _context.Profiles
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (exams == null)
+            if (profiles == null)
             {
                 return NotFound();
             }
 
-            return View(exams);
+            return View(profiles);
         }
 
-        // POST: Exams/Delete/5
+        // POST: Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var exams = await _context.Exams.FindAsync(id);
-            if (exams != null)
+            var profiles = await _context.Profiles.FindAsync(id);
+            if (profiles != null)
             {
-                _context.Exams.Remove(exams);
+                _context.Profiles.Remove(profiles);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ExamsExists(int id)
+        private bool ProfilesExists(int id)
         {
-            return _context.Exams.Any(e => e.Id == id);
+            return _context.Profiles.Any(e => e.Id == id);
         }
     }
 }

@@ -29,6 +29,7 @@ public static class SeedData
                     Answer3 = "Your Third Option",
                     Answer4 = "Your Fourth Option",
                     Answer5 = "Your Fifth Option",
+                    Score = 0,
                 }
             );
             context.SaveChanges();
