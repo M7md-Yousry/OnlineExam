@@ -72,7 +72,7 @@
     <title>index</title>
   </head>
   <body>
-    <form class="form" onsubmit="return validateForm()">
+    <form class="form">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input
@@ -95,14 +95,14 @@
           <i class="fa-solid fa-eye-slash"></i>
         </div>
       </div>
-      <button type="submit" class="btn">
-        <a asp-action="Login">Login</a>
+      <button type="submit" class="btn" asp-action="Login">
+        <a>Login</a>
         </button>
     </form>
     <script>
       const $password = document.querySelector(".password");
       const $toggler = document.querySelector("i");
-      const $username = document.querySelector(".username");
+      @* const $username = document.querySelector(".username"); *@
 
       const showHidePassword = () => {
         if ($password.type == "password") {

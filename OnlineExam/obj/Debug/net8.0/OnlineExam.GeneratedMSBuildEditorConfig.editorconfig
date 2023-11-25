@@ -26,6 +26,54 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\M7md_Amer\Desktop\Qnb New Task\OnlineExam
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/Exams/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xFeGFtc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/Exams/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xFeGFtc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/Exams/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xFeGFtc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/Exams/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xFeGFtc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/Exams/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xFeGFtc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/Exams/Questions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xFeGFtc1xRdWVzdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/Exams/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xFeGFtc1xSZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/OnlineExam/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xPbmxpbmVFeGFtXGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/OnlineExam/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xPbmxpbmVFeGFtXFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/OnlineExam/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = T25saW5lRXhhbVxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/Views/Exams/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +92,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/Views/Exams/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/Views/Exams/Questions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXNcUXVlc3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/Views/Exams/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXNcUmVzdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/M7md_Amer/Desktop/Qnb New Task/OnlineExam/Views/OnlineExam/index.cshtml]
